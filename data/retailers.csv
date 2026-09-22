@@ -1,0 +1,13 @@
+name,type,parent_company,website
+BigBasket,ecommerce,Tata Group,https://www.bigbasket.com
+Blinkit,quick_commerce,Zomato,https://www.blinkit.com
+Zepto,quick_commerce,,https://www.zeptonow.com
+Swiggy Instamart,quick_commerce,Swiggy,https://www.swiggy.com/instamart
+Amazon Fresh,ecommerce,Amazon,https://www.amazon.in/fresh
+Flipkart Quick,ecommerce,Flipkart,https://www.flipkart.com
+DMart,supermarket,Avenue Supermarts,https://www.dmart.in
+Reliance Fresh,supermarket,Reliance Retail,https://www.relianceretail.com
+More,supermarket,Aditya Birla Group,https://www.more.com
+Spencer's,supermarket,RP-Sanjiv Goenka Group,https://www.spencers.in
+Vishal Mega Mart,hypermarket,,https://www.vishalmegamart.com
+Local Dairy Parlour,general_trade,,,

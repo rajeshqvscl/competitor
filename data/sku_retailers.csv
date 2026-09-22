@@ -1,0 +1,110 @@
+sku_product,sku_variant,retailer,region,channel,available
+Amul Gold Full Cream Milk,Regular,BigBasket,Gujarat,ecommerce,true
+Amul Gold Full Cream Milk,Regular,BigBasket,Maharashtra,ecommerce,true
+Amul Gold Full Cream Milk,Regular,Blinkit,Delhi NCR,quick_commerce,true
+Amul Gold Full Cream Milk,Regular,DMart,Gujarat,supermarket,true
+Amul Gold Full Cream Milk,Regular,Reliance Fresh,Maharashtra,supermarket,true
+Amul Taaza Toned Milk,Regular,BigBasket,Gujarat,ecommerce,true
+Amul Taaza Toned Milk,Regular,BigBasket,Punjab,ecommerce,true
+Amul Taaza Toned Milk,Regular,Blinkit,Delhi NCR,quick_commerce,true
+Amul Taaza Toned Milk,Regular,DMart,Gujarat,supermarket,true
+Amul Shakti Double Toned Milk,Regular,BigBasket,Gujarat,ecommerce,true
+Amul Slim & Trim Skimmed Milk,Regular,BigBasket,Gujarat,ecommerce,true
+Amul UHT Milk,Regular,BigBasket,Gujarat,ecommerce,true
+Amul UHT Milk,Regular,BigBasket,Maharashtra,ecommerce,true
+Amul UHT Milk,Regular,Reliance Fresh,Delhi NCR,supermarket,true
+Mother Dairy Full Cream Milk,Regular,BigBasket,Delhi NCR,ecommerce,true
+Mother Dairy Full Cream Milk,Regular,Blinkit,Delhi NCR,quick_commerce,true
+Mother Dairy Full Cream Milk,Regular,Reliance Fresh,Delhi NCR,supermarket,true
+Mother Dairy Full Cream Milk,Regular,DMart,Maharashtra,supermarket,true
+Mother Dairy Toned Milk,Regular,BigBasket,Delhi NCR,ecommerce,true
+Mother Dairy Toned Milk,Regular,Blinkit,Delhi NCR,quick_commerce,true
+Mother Dairy Double Toned Milk,Regular,BigBasket,Delhi NCR,ecommerce,true
+Mother Dairy UHT Milk,Regular,BigBasket,Delhi NCR,ecommerce,true
+Mother Dairy UHT Milk,Regular,Reliance Fresh,Maharashtra,supermarket,true
+Nestle A+ Milk,Regular,BigBasket,Delhi NCR,ecommerce,true
+Nestle A+ Milk,Regular,BigBasket,Maharashtra,ecommerce,true
+Nestle A+ Milk,Regular,Blinkit,Delhi NCR,quick_commerce,true
+Nestle A+ Toned Milk,Regular,BigBasket,Delhi NCR,ecommerce,true
+Nestle A+ UHT Milk,Regular,BigBasket,Delhi NCR,ecommerce,true
+Nestle A+ UHT Milk,Regular,Reliance Fresh,Maharashtra,supermarket,true
+Heritage Full Cream Milk,Regular,BigBasket,Andhra Pradesh,ecommerce,true
+Heritage Full Cream Milk,Regular,Reliance Fresh,Andhra Pradesh,supermarket,true
+Heritage Toned Milk,Regular,BigBasket,Andhra Pradesh,ecommerce,true
+Verka Full Cream Milk,Regular,BigBasket,Punjab,ecommerce,true
+Verka Full Cream Milk,Regular,DMart,Punjab,supermarket,true
+Verka Toned Milk,Regular,BigBasket,Punjab,ecommerce,true
+Dodla Full Cream Milk,Regular,BigBasket,Andhra Pradesh,ecommerce,true
+Dodla Toned Milk,Regular,BigBasket,Andhra Pradesh,ecommerce,true
+Hatsun Arokya Full Cream,Regular,BigBasket,Tamil Nadu,ecommerce,true
+Hatsun Arokya Full Cream,Regular,Reliance Fresh,Tamil Nadu,supermarket,true
+Hatsun Arokya Toned,Regular,BigBasket,Tamil Nadu,ecommerce,true
+Nandini Ksheera,Regular,BigBasket,Karnataka,ecommerce,true
+Nandini Ksheera,Regular,Reliance Fresh,Karnataka,supermarket,true
+Nandini Toned,Regular,BigBasket,Karnataka,ecommerce,true
+Milma Full Cream,Regular,BigBasket,Kerala,ecommerce,true
+Milma Toned,Regular,BigBasket,Kerala,ecommerce,true
+Dudhsagar Full Cream,Regular,BigBasket,Gujarat,ecommerce,true
+Warana Toned,Regular,BigBasket,Maharashtra,ecommerce,true
+Amul Curd,Regular,BigBasket,Gujarat,ecommerce,true
+Amul Curd,Regular,BigBasket,Maharashtra,ecommerce,true
+Amul Curd,Regular,Blinkit,Delhi NCR,quick_commerce,true
+Amul Curd,Regular,DMart,Gujarat,supermarket,true
+Amul Curd,Family,BigBasket,Gujarat,ecommerce,true
+Mother Dairy Curd,Regular,BigBasket,Delhi NCR,ecommerce,true
+Mother Dairy Curd,Regular,Blinkit,Delhi NCR,quick_commerce,true
+Mother Dairy Curd,Regular,Reliance Fresh,Delhi NCR,supermarket,true
+Nestle Milk Man Curd,Regular,BigBasket,Delhi NCR,ecommerce,true
+Heritage Curd,Regular,BigBasket,Andhra Pradesh,ecommerce,true
+Nandini Curd,Regular,BigBasket,Karnataka,ecommerce,true
+Hatsun Curd,Regular,BigBasket,Tamil Nadu,ecommerce,true
+Milma Curd,Regular,BigBasket,Kerala,ecommerce,true
+Amul Butter,Regular,BigBasket,Gujarat,ecommerce,true
+Amul Butter,Regular,BigBasket,Maharashtra,ecommerce,true
+Amul Butter,Regular,DMart,Gujarat,supermarket,true
+Amul Butter,Regular,Reliance Fresh,Delhi NCR,supermarket,true
+Amul Butter,Premium,BigBasket,Delhi NCR,ecommerce,true
+Mother Dairy Butter,Regular,BigBasket,Delhi NCR,ecommerce,true
+Amul Ghee,Regular,BigBasket,Gujarat,ecommerce,true
+Amul Ghee,Regular,BigBasket,Maharashtra,ecommerce,true
+Amul Ghee,Regular,DMart,Gujarat,supermarket,true
+Amul Ghee,Regular,Reliance Fresh,Delhi NCR,supermarket,true
+Amul Ghee,Family,BigBasket,Gujarat,ecommerce,true
+Amul Ghee,Premium,BigBasket,Delhi NCR,ecommerce,true
+Mother Dairy Ghee,Regular,BigBasket,Delhi NCR,ecommerce,true
+Mother Dairy Ghee,Family,BigBasket,Delhi NCR,ecommerce,true
+Nestle EveryDay Ghee,Regular,BigBasket,Delhi NCR,ecommerce,true
+Heritage Ghee,Regular,BigBasket,Andhra Pradesh,ecommerce,true
+Dodla Ghee,Regular,BigBasket,Andhra Pradesh,ecommerce,true
+Hatsun Ghee,Regular,BigBasket,Tamil Nadu,ecommerce,true
+Nandini Ghee,Regular,BigBasket,Karnataka,ecommerce,true
+Milma Ghee,Regular,BigBasket,Kerala,ecommerce,true
+Amul Paneer,Regular,BigBasket,Gujarat,ecommerce,true
+Amul Paneer,Regular,BigBasket,Maharashtra,ecommerce,true
+Amul Paneer,Regular,Blinkit,Delhi NCR,quick_commerce,true
+Amul Paneer,Regular,DMart,Gujarat,supermarket,true
+Amul Paneer,Regular,Reliance Fresh,Delhi NCR,supermarket,true
+Amul Paneer,Family,BigBasket,Gujarat,ecommerce,true
+Amul Paneer,Premium,BigBasket,Delhi NCR,ecommerce,true
+Mother Dairy Paneer,Regular,BigBasket,Delhi NCR,ecommerce,true
+Mother Dairy Paneer,Regular,Blinkit,Delhi NCR,quick_commerce,true
+Mother Dairy Paneer,Regular,Reliance Fresh,Delhi NCR,supermarket,true
+Heritage Paneer,Regular,BigBasket,Andhra Pradesh,ecommerce,true
+Heritage Paneer,Regular,Reliance Fresh,Andhra Pradesh,supermarket,true
+Dodla Paneer,Regular,BigBasket,Andhra Pradesh,ecommerce,true
+Hatsun Paneer,Regular,BigBasket,Tamil Nadu,ecommerce,true
+Nandini Paneer,Regular,BigBasket,Karnataka,ecommerce,true
+Amul Cheese,Regular,BigBasket,Gujarat,ecommerce,true
+Amul Cheese,Regular,BigBasket,Maharashtra,ecommerce,true
+Amul Cheese,Regular,Blinkit,Delhi NCR,quick_commerce,true
+Amul Cheese,Regular,DMart,Gujarat,supermarket,true
+Amul Cheese,Regular,Reliance Fresh,Delhi NCR,supermarket,true
+Amul Cheese,Premium,BigBasket,Delhi NCR,ecommerce,true
+Britannia Cheese,Regular,BigBasket,Karnataka,ecommerce,true
+Britannia Cheese,Regular,Reliance Fresh,Maharashtra,supermarket,true
+Go Cheese,Regular,BigBasket,Gujarat,ecommerce,true
+Amul Cheese Slices,Regular,BigBasket,Gujarat,ecommerce,true
+Amul Cheese Slices,Regular,Blinkit,Delhi NCR,quick_commerce,true
+Britannia Cheese Slices,Regular,BigBasket,Karnataka,ecommerce,true
+Amul Cheese Cubes,Regular,BigBasket,Delhi NCR,ecommerce,true
+Amul Cheese Spread,Regular,BigBasket,Gujarat,ecommerce,true

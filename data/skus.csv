@@ -1,0 +1,87 @@
+product,variant,pack_size,unit,packaging_type,mrp,selling_price,fat_percent,protein_percent,shelf_life_days,status
+Amul Gold Full Cream Milk,Regular,500,ml,pouch,36,35,6.0,3.3,7,active
+Amul Gold Full Cream Milk,Regular,1000,ml,pouch,68,65,6.0,3.3,7,active
+Amul Gold Full Cream Milk,Regular,200,ml,pouch,16,15,6.0,3.3,7,active
+Amul Taaza Toned Milk,Regular,500,ml,pouch,28,27,4.5,3.0,7,active
+Amul Taaza Toned Milk,Regular,1000,ml,pouch,54,52,4.5,3.0,7,active
+Amul Taaza Toned Milk,Regular,200,ml,pouch,12,11,4.5,3.0,7,active
+Amul Shakti Double Toned Milk,Regular,500,ml,pouch,24,23,3.0,3.0,7,active
+Amul Shakti Double Toned Milk,Regular,1000,ml,pouch,46,44,3.0,3.0,7,active
+Amul Slim & Trim Skimmed Milk,Regular,500,ml,pouch,22,21,0.5,3.4,7,active
+Amul UHT Milk,Regular,500,ml,tetrapack,32,30,4.5,3.0,180,active
+Amul UHT Milk,Regular,1000,ml,tetrapack,60,58,4.5,3.0,180,active
+Mother Dairy Full Cream Milk,Regular,500,ml,pouch,35,34,6.0,3.3,7,active
+Mother Dairy Full Cream Milk,Regular,1000,ml,pouch,66,64,6.0,3.3,7,active
+Mother Dairy Toned Milk,Regular,500,ml,pouch,27,26,4.5,3.0,7,active
+Mother Dairy Toned Milk,Regular,1000,ml,pouch,52,50,4.5,3.0,7,active
+Mother Dairy Double Toned Milk,Regular,500,ml,pouch,23,22,3.0,3.0,7,active
+Mother Dairy UHT Milk,Regular,500,ml,tetrapack,30,29,4.5,3.0,180,active
+Mother Dairy UHT Milk,Regular,1000,ml,tetrapack,58,56,4.5,3.0,180,active
+Nestle A+ Milk,Regular,500,ml,pouch,36,35,6.0,3.3,7,active
+Nestle A+ Milk,Regular,1000,ml,pouch,68,65,6.0,3.3,7,active
+Nestle A+ Toned Milk,Regular,500,ml,pouch,28,27,4.5,3.0,7,active
+Nestle A+ UHT Milk,Regular,500,ml,tetrapack,32,30,4.5,3.0,180,active
+Nestle A+ UHT Milk,Regular,1000,ml,tetrapack,60,58,4.5,3.0,180,active
+Heritage Full Cream Milk,Regular,500,ml,pouch,34,33,6.0,3.3,7,active
+Heritage Full Cream Milk,Regular,1000,ml,pouch,64,62,6.0,3.3,7,active
+Heritage Toned Milk,Regular,500,ml,pouch,26,25,4.5,3.0,7,active
+Heritage Toned Milk,Regular,1000,ml,pouch,50,48,4.5,3.0,7,active
+Verka Full Cream Milk,Regular,500,ml,pouch,32,31,6.0,3.3,7,active
+Verka Full Cream Milk,Regular,1000,ml,pouch,60,58,6.0,3.3,7,active
+Verka Toned Milk,Regular,500,ml,pouch,25,24,4.5,3.0,7,active
+Verka Skimmed Milk,Regular,500,ml,pouch,20,19,0.5,3.4,7,active
+Dodla Full Cream Milk,Regular,500,ml,pouch,34,33,6.0,3.3,7,active
+Dodla Toned Milk,Regular,500,ml,pouch,26,25,4.5,3.0,7,active
+Hatsun Arokya Full Cream,Regular,500,ml,pouch,35,34,6.0,3.3,7,active
+Hatsun Arokya Full Cream,Regular,1000,ml,pouch,66,64,6.0,3.3,7,active
+Hatsun Arokya Toned,Regular,500,ml,pouch,27,26,4.5,3.0,7,active
+Nandini Ksheera,Regular,500,ml,pouch,30,29,6.0,3.3,7,active
+Nandini Toned,Regular,500,ml,pouch,24,23,4.5,3.0,7,active
+Nandini Shubham,Regular,500,ml,pouch,24,23,4.5,3.0,7,active
+Milma Full Cream,Regular,500,ml,pouch,33,32,6.0,3.3,7,active
+Milma Toned,Regular,500,ml,pouch,26,25,4.5,3.0,7,active
+Dudhsagar Full Cream,Regular,500,ml,pouch,30,29,6.0,3.3,7,active
+Warana Toned,Regular,500,ml,pouch,24,23,4.5,3.0,7,active
+Amul Curd,Regular,400,g,pouch,36,35,4.5,3.0,15,active
+Amul Curd,Regular,200,g,cup,18,17,4.5,3.0,15,active
+Amul Curd,Family,800,g,pouch,68,66,4.5,3.0,15,active
+Mother Dairy Curd,Regular,400,g,pouch,34,33,4.5,3.0,15,active
+Mother Dairy Curd,Regular,200,g,cup,17,16,4.5,3.0,15,active
+Nestle Milk Man Curd,Regular,400,g,cup,40,38,4.0,3.0,15,active
+Heritage Curd,Regular,400,g,pouch,32,30,4.5,3.0,15,active
+Nandini Curd,Regular,400,g,pouch,28,27,4.5,3.0,15,active
+Hatsun Curd,Regular,400,g,cup,35,34,4.0,3.0,15,active
+Milma Curd,Regular,400,g,pouch,32,31,4.5,3.0,15,active
+Amul Butter,Regular,100,g,pouch,50,48,80.0,0.6,120,active
+Amul Butter,Premium,200,g,pouch,98,95,80.0,0.6,120,active
+Mother Dairy Butter,Regular,100,g,pouch,48,46,80.0,0.6,120,active
+Amul Ghee,Regular,100,ml,jar,145,140,99.5,0.2,365,active
+Amul Ghee,Family,500,ml,jar,680,660,99.5,0.2,365,active
+Amul Ghee,Premium,1,lt,jar,1300,1260,99.5,0.2,365,active
+Mother Dairy Ghee,Regular,100,ml,jar,140,135,99.5,0.2,365,active
+Mother Dairy Ghee,Family,500,ml,jar,660,640,99.5,0.2,365,active
+Nestle EveryDay Ghee,Regular,100,ml,jar,142,138,99.5,0.2,365,active
+Heritage Ghee,Regular,100,ml,jar,130,125,99.5,0.2,365,active
+Dodla Ghee,Regular,100,ml,jar,130,125,99.5,0.2,365,active
+Hatsun Ghee,Regular,100,ml,jar,135,130,99.5,0.2,365,active
+Nandini Ghee,Regular,100,ml,jar,120,115,99.5,0.2,365,active
+Milma Ghee,Regular,100,ml,jar,125,120,99.5,0.2,365,active
+Amul Paneer,Regular,200,g,pack,80,75,20.0,18.0,15,active
+Amul Paneer,Regular,500,g,pack,190,180,20.0,18.0,15,active
+Amul Paneer,Premium,200,g,pack,90,85,22.0,20.0,15,active
+Mother Dairy Paneer,Regular,200,g,pack,75,70,18.0,16.0,15,active
+Mother Dairy Paneer,Regular,500,g,pack,180,170,18.0,16.0,15,active
+Heritage Paneer,Regular,200,g,pack,72,68,18.0,16.0,15,active
+Heritage Paneer,Regular,500,g,pack,175,165,18.0,16.0,15,active
+Dodla Paneer,Regular,200,g,pack,70,66,18.0,16.0,15,active
+Dodla Paneer,Regular,500,g,pack,170,160,18.0,16.0,15,active
+Hatsun Paneer,Regular,200,g,pack,75,72,18.0,16.0,15,active
+Nandini Paneer,Regular,200,g,pack,65,62,18.0,16.0,15,active
+Amul Cheese,Regular,200,g,pack,100,95,25.0,20.0,180,active
+Amul Cheese,Premium,400,g,pack,195,185,25.0,20.0,180,active
+Britannia Cheese,Regular,200,g,pack,95,90,24.0,18.0,180,active
+Go Cheese,Regular,200,g,pack,90,85,24.0,18.0,180,active
+Amul Cheese Slices,Regular,200,g,pack,110,105,25.0,20.0,120,active
+Britannia Cheese Slices,Regular,200,g,pack,100,95,24.0,18.0,120,active
+Amul Cheese Cubes,Regular,200,g,pack,120,115,25.0,20.0,120,active
+Amul Cheese Spread,Regular,200,g,jar,130,125,22.0,15.0,90,active

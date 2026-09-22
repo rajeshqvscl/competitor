@@ -1,0 +1,61 @@
+sku_product,sku_variant,mrp,selling_price,discount_percent,recorded_date
+Amul Gold Full Cream Milk,Regular,32,31,3.12,2025-06-01
+Amul Gold Full Cream Milk,Regular,34,33,2.94,2025-09-01
+Amul Gold Full Cream Milk,Regular,36,35,2.78,2026-01-01
+Amul Gold Full Cream Milk,Regular,36,35,2.78,2026-06-01
+Amul Taaza Toned Milk,Regular,25,24,4.00,2025-06-01
+Amul Taaza Toned Milk,Regular,27,26,3.70,2025-09-01
+Amul Taaza Toned Milk,Regular,28,27,3.57,2026-01-01
+Amul Taaza Toned Milk,Regular,28,27,3.57,2026-06-01
+Mother Dairy Full Cream Milk,Regular,32,31,3.12,2025-06-01
+Mother Dairy Full Cream Milk,Regular,34,33,2.94,2025-09-01
+Mother Dairy Full Cream Milk,Regular,35,34,2.86,2026-01-01
+Mother Dairy Full Cream Milk,Regular,35,34,2.86,2026-06-01
+Mother Dairy Toned Milk,Regular,25,24,4.00,2025-06-01
+Mother Dairy Toned Milk,Regular,26,25,3.85,2025-09-01
+Mother Dairy Toned Milk,Regular,27,26,3.70,2026-01-01
+Mother Dairy Toned Milk,Regular,27,26,3.70,2026-06-01
+Nestle A+ Milk,Regular,33,32,3.03,2025-06-01
+Nestle A+ Milk,Regular,35,34,2.86,2025-09-01
+Nestle A+ Milk,Regular,36,35,2.78,2026-01-01
+Nestle A+ Milk,Regular,36,35,2.78,2026-06-01
+Heritage Full Cream Milk,Regular,31,30,3.23,2025-06-01
+Heritage Full Cream Milk,Regular,33,32,3.03,2025-09-01
+Heritage Full Cream Milk,Regular,34,33,2.94,2026-01-01
+Heritage Full Cream Milk,Regular,34,33,2.94,2026-06-01
+Verka Full Cream Milk,Regular,29,28,3.45,2025-06-01
+Verka Full Cream Milk,Regular,31,30,3.23,2025-09-01
+Verka Full Cream Milk,Regular,32,31,3.12,2026-01-01
+Verka Full Cream Milk,Regular,32,31,3.12,2026-06-01
+Amul Curd,Regular,33,32,3.03,2025-06-01
+Amul Curd,Regular,35,34,2.86,2025-09-01
+Amul Curd,Regular,36,35,2.78,2026-01-01
+Amul Curd,Regular,36,35,2.78,2026-06-01
+Mother Dairy Curd,Regular,31,30,3.23,2025-06-01
+Mother Dairy Curd,Regular,33,32,3.03,2025-09-01
+Mother Dairy Curd,Regular,34,33,2.94,2026-01-01
+Mother Dairy Curd,Regular,34,33,2.94,2026-06-01
+Amul Butter,Regular,45,43,4.44,2025-06-01
+Amul Butter,Regular,48,46,4.17,2025-09-01
+Amul Butter,Regular,50,48,4.00,2026-01-01
+Amul Butter,Regular,50,48,4.00,2026-06-01
+Amul Ghee,Regular,130,126,3.08,2025-06-01
+Amul Ghee,Regular,138,134,2.90,2025-09-01
+Amul Ghee,Regular,145,140,3.45,2026-01-01
+Amul Ghee,Regular,145,140,3.45,2026-06-01
+Amul Paneer,Regular,72,68,5.56,2025-06-01
+Amul Paneer,Regular,76,72,5.26,2025-09-01
+Amul Paneer,Regular,80,75,6.25,2026-01-01
+Amul Paneer,Regular,80,75,6.25,2026-06-01
+Mother Dairy Paneer,Regular,68,64,5.88,2025-06-01
+Mother Dairy Paneer,Regular,72,68,5.56,2025-09-01
+Mother Dairy Paneer,Regular,75,70,6.67,2026-01-01
+Mother Dairy Paneer,Regular,75,70,6.67,2026-06-01
+Amul Cheese,Regular,90,86,4.44,2025-06-01
+Amul Cheese,Regular,95,90,5.26,2025-09-01
+Amul Cheese,Regular,100,95,5.00,2026-01-01
+Amul Cheese,Regular,100,95,5.00,2026-06-01
+Britannia Cheese,Regular,85,81,4.71,2025-06-01
+Britannia Cheese,Regular,90,86,4.44,2025-09-01
+Britannia Cheese,Regular,95,90,5.26,2026-01-01
+Britannia Cheese,Regular,95,90,5.26,2026-06-01

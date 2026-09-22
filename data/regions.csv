@@ -1,0 +1,22 @@
+name,level,parent
+North,region,
+West,region,
+South,region,
+East,region,
+Delhi NCR,state,North
+Punjab,state,North
+Haryana,state,North
+Uttar Pradesh,state,North
+Rajasthan,state,North
+Maharashtra,state,West
+Gujarat,state,West
+Madhya Pradesh,state,West
+Goa,state,West
+Karnataka,state,South
+Tamil Nadu,state,South
+Andhra Pradesh,state,South
+Telangana,state,South
+Kerala,state,South
+West Bengal,state,East
+Bihar,state,East
+Odisha,state,East

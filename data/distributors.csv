@@ -1,0 +1,18 @@
+name,type,territory,city,state,district,retailer_count,channel,website
+Allied Distributors,national,North India,Delhi,Delhi NCR,New Delhi,500,general_trade,https://example.com
+Milky Mist Distribution,regional,South India,Bangalore,Karnataka,Bangalore Urban,300,general_trade,https://example.com
+Amul Distribution Network,national,All India,Anand,Gujarat,Anand,5000,general_trade,https://www.amul.com
+Mother Dairy Supply Chain,national,All India,Delhi,Delhi NCR,New Delhi,2000,modern_trade,https://www.motherdairy.com
+Heritage Foods Distribution,regional,South India,Hyderabad,Telangana,Hyderabad,800,general_trade,https://www.heritagefoods.in
+Verka Distribution Network,regional,North India,Ludhiana,Punjab,Ludhiana,600,general_trade,https://www.verka.coop
+Dodla Distribution,regional,South India,Hyderabad,Andhra Pradesh,Guntur,400,general_trade,https://www.dodladairy.com
+Hatsun Distribution Network,regional,South India,Chennai,Tamil Nadu,Chennai,1200,general_trade,https://www.hatsun.com
+Nandini Distribution Network,regional,South India,Bangalore,Karnataka,Bangalore Urban,3000,general_trade,https://www.kmf.co.in
+BigBasket Supply Chain,ecommerce,All India,Bangalore,Karnataka,Bangalore Urban,100,ecommerce,https://www.bigbasket.com
+Blinkit Quick Commerce,national,All India,Gurugram,Haryana,Gurugram,200,quick_commerce,https://www.blinkit.com
+Zepto Distribution,national,All India,Mumbai,Maharashtra,Mumbai,150,quick_commerce,https://www.zeptonow.com
+DMart Supply Chain,regional,West India,Mumbai,Maharashtra,Thane,500,supermarket,https://www.dmart.in
+Reliance Fresh Distribution,national,All India,Mumbai,Maharashtra,Mumbai,1000,modern_trade,https://www.relianceretail.com
+Nestle Distribution India,national,All India,Gurgaon,Haryana,Gurgaon,800,general_trade,https://www.nestle.in
+Britannia Distribution Network,national,All India,Bangalore,Karnataka,Bangalore Urban,1500,general_trade,https://www.britannia.co.in
+Parag Milk Distribution,regional,West India,Pune,Maharashtra,Pune,600,general_trade,https://www.paragmilks.com

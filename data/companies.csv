@@ -1,0 +1,16 @@
+name,slug,ownership_type,parent_company,website,headquarters_region,is_listed,is_global
+Amul (GCMMF),amul,cooperative,,https://www.amul.com,Gujarat,False,False
+Mother Dairy,mother-dairy,listed,"Mother Dairy Fruit & Vegetable Pvt Ltd",https://www.motherdairy.com,Delhi NCR,True,False
+Nestle India,nestle-india,global,Nestle S.A.,https://www.nestle.in,Delhi NCR,False,True
+Heritage Foods,heritage-foods,listed,,https://www.heritagefoods.in,Andhra Pradesh,True,False
+Verka (Milkfed),verka,cooperative,,https://www.verka.coop,Punjab,False,False
+Dodla Dairy,dodla-dairy,listed,,https://www.dodladairy.com,Andhra Pradesh,True,False
+Britannia Industries,britannia,listed,"Britannia Industries Ltd",https://www.britannia.co.in,Karnataka,True,False
+Parag Milk Foods,parag-milk,listed,,https://www.paragmilks.com,Maharashtra,True,False
+Hatsun Agro,hatsun,listed,,https://www.hatsun.com,Tamil Nadu,True,False
+Dudhsagar Dairy,dudhsagar,cooperative,,https://www.dudhsagardairy.com,Gujarat,False,False
+Warana Dairy,warana,cooperative,,https://www.warana.com,Maharashtra,False,False
+Milma,milma,cooperative,,https://www.keralamilma.com,Kerala,False,False
+Nandini (KMF),nandini,cooperative,,https://www.kmf.co.in,Karnataka,False,False
+Govardhan Dairy,gowardhan,unlisted,,https://www.gowardhan.com,Maharashtra,False,False
+Akshayakalpa,akshayakalpa,unlisted,,https://www.akshayakalpa.com,Karnataka,False,False

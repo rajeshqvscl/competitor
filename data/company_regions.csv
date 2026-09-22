@@ -1,0 +1,62 @@
+company,region,is_primary
+Amul (GCMMF),Gujarat,true
+Amul (GCMMF),Maharashtra,false
+Amul (GCMMF),Delhi NCR,false
+Amul (GCMMF),Punjab,false
+Amul (GCMMF),Rajasthan,false
+Amul (GCMMF),Karnataka,false
+Amul (GCMMF),Tamil Nadu,false
+Amul (GCMMF),Andhra Pradesh,false
+Amul (GCMMF),Telangana,false
+Amul (GCMMF),Madhya Pradesh,false
+Mother Dairy,Delhi NCR,true
+Mother Dairy,Maharashtra,false
+Mother Dairy,Karnataka,false
+Mother Dairy,Tamil Nadu,false
+Mother Dairy,Andhra Pradesh,false
+Mother Dairy,Rajasthan,false
+Nestle India,Delhi NCR,true
+Nestle India,Maharashtra,false
+Nestle India,Karnataka,false
+Nestle India,Tamil Nadu,false
+Nestle India,Gujarat,false
+Heritage Foods,Andhra Pradesh,true
+Heritage Foods,Telangana,false
+Heritage Foods,Karnataka,false
+Heritage Foods,Tamil Nadu,false
+Verka (Milkfed),Punjab,true
+Verka (Milkfed),Haryana,false
+Verka (Milkfed),Delhi NCR,false
+Dodla Dairy,Andhra Pradesh,true
+Dodla Dairy,Telangana,false
+Dodla Dairy,Karnataka,false
+Dodla Dairy,Tamil Nadu,false
+Britannia Industries,Karnataka,true
+Britannia Industries,Maharashtra,false
+Britannia Industries,Delhi NCR,false
+Britannia Industries,Tamil Nadu,false
+Britannia Industries,Gujarat,false
+Parag Milk Foods,Maharashtra,true
+Parag Milk Foods,Gujarat,false
+Parag Milk Foods,Delhi NCR,false
+Parag Milk Foods,Karnataka,false
+Hatsun Agro,Tamil Nadu,true
+Hatsun Agro,Karnataka,false
+Hatsun Agro,Andhra Pradesh,false
+Hatsun Agro,Telangana,false
+Dudhsagar Dairy,Gujarat,true
+Dudhsagar Dairy,Maharashtra,false
+Dudhsagar Dairy,Rajasthan,false
+Warana Dairy,Maharashtra,true
+Warana Dairy,Goa,false
+Warana Dairy,Karnataka,false
+Milma,Kerala,true
+Milma,Karnataka,false
+Nandini (KMF),Karnataka,true
+Nandini (KMF),Andhra Pradesh,false
+Nandini (KMF),Telangana,false
+Govardhan Dairy,Maharashtra,true
+Govardhan Dairy,Gujarat,false
+Govardhan Dairy,Delhi NCR,false
+Akshayakalpa,Karnataka,true
+Akshayakalpa,Tamil Nadu,false
