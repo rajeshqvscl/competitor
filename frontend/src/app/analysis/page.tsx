@@ -221,9 +221,19 @@ export default function AnalysisPage() {
         </div>
 
         <div className="flex items-center gap-4">
-          <button onClick={runAnalysis} disabled={!targetCompanyId || loading} className="btn-primary disabled:opacity-50">
+          <button
+            onClick={runAnalysis}
+            disabled={!targetCompanyId || loading}
+            title={!targetCompanyId ? "Select a target company first" : undefined}
+            className="btn-primary"
+          >
             {loading ? "Analyzing..." : "Run Analysis"}
           </button>
+          {!targetCompanyId && !loading && (
+            <span className="text-sm text-amber-600 flex items-center gap-1.5">
+              ⚠ Select a target company to enable analysis
+            </span>
+          )}
 
           {competitorResult?.competitors?.length > 0 && (
             <>

@@ -1,16 +1,16 @@
-name,slug,ownership_type,parent_company,website,headquarters_region,is_listed,is_global
-Amul (GCMMF),amul,cooperative,,https://www.amul.com,Gujarat,False,False
-Mother Dairy,mother-dairy,listed,"Mother Dairy Fruit & Vegetable Pvt Ltd",https://www.motherdairy.com,Delhi NCR,True,False
-Nestle India,nestle-india,global,Nestle S.A.,https://www.nestle.in,Delhi NCR,False,True
-Heritage Foods,heritage-foods,listed,,https://www.heritagefoods.in,Andhra Pradesh,True,False
-Verka (Milkfed),verka,cooperative,,https://www.verka.coop,Punjab,False,False
-Dodla Dairy,dodla-dairy,listed,,https://www.dodladairy.com,Andhra Pradesh,True,False
-Britannia Industries,britannia,listed,"Britannia Industries Ltd",https://www.britannia.co.in,Karnataka,True,False
-Parag Milk Foods,parag-milk,listed,,https://www.paragmilks.com,Maharashtra,True,False
-Hatsun Agro,hatsun,listed,,https://www.hatsun.com,Tamil Nadu,True,False
-Dudhsagar Dairy,dudhsagar,cooperative,,https://www.dudhsagardairy.com,Gujarat,False,False
-Warana Dairy,warana,cooperative,,https://www.warana.com,Maharashtra,False,False
-Milma,milma,cooperative,,https://www.keralamilma.com,Kerala,False,False
-Nandini (KMF),nandini,cooperative,,https://www.kmf.co.in,Karnataka,False,False
-Govardhan Dairy,gowardhan,unlisted,,https://www.gowardhan.com,Maharashtra,False,False
-Akshayakalpa,akshayakalpa,unlisted,,https://www.akshayakalpa.com,Karnataka,False,False
+name,slug,ownership_type,parent_company,website,headquarters_region,is_listed,is_global,description
+Amul (GCMMF),amul,cooperative,,https://www.amul.com,Gujarat,False,False,"Amul is India's largest dairy cooperative, owned by GCMMF - a federation of Gujarat milk producer unions. Famous for butter, milk and a full dairy range under the 'Taste of India' brand."
+Mother Dairy,mother-dairy,listed,"Mother Dairy Fruit & Vegetable Pvt Ltd",https://www.motherdairy.com,Delhi NCR,True,False,"Mother Dairy is a wholly-owned subsidiary of NDDB, a major milk supplier in Delhi-NCR with token/pouch milk, ice creams and the Safal and Dhara brands."
+Nestle India,nestle-india,listed,"Nestle S.A.",https://www.nestle.in,Delhi NCR,True,True,"Nestle India is the Indian arm of Swiss FMCG giant Nestle; dairy brands include Nestle Milk, EveryDay milk powder, Milkpak, and dahi, sold alongside foods like Maggi."
+Heritage Foods,heritage-foods,listed,,https://www.heritagefoods.in,Telangana,True,False,"Heritage Foods is a Hyderabad-based listed dairy founded in 1992 by N. Chandrababu Naidu, strong in South India with milk, curd and value-added products."
+Verka (Milkfed),verka,cooperative,,https://verka.coop,Punjab,False,False,"Verka is the brand of Milkfed Punjab Co-operative Milk Producers Federation, the state cooperative of Punjab selling milk, ghee, paneer, sweets and beverages."
+Dodla Dairy,dodla-dairy,listed,,https://dodladairy.com,Telangana,True,False,"Dodla Dairy is a Hyderabad-based listed dairy company operating primarily in South India with milk, curd, butter, ghee and paneer across four states."
+Britannia Industries,britannia,listed,,https://www.britannia.co.in,Karnataka,True,True,"Britannia is a leading Indian FMCG company famous for biscuits, with a growing dairy portfolio including cheese, ghee, dahi and milk drinks under Wadia Group ownership."
+Parag Milk Foods,parag-milk,listed,,https://www.paragmilkfoods.com,Maharashtra,True,False,"Parag Milk Foods is a listed private dairy owning Gowardhan ghee, Go Cheese, Pride of Cows premium milk and the Akashganga brands, with one of India's largest private dairy farms."
+Hatsun Agro,hatsun,listed,,https://www.hap.in,Tamil Nadu,True,False,"Hatsun Agro Product is India's largest private dairy by volume, owning Arun Ice Cream, Arokya milk and Hatsun brand, exporting to 40+ countries."
+Dudhsagar Dairy,dudhsagar,cooperative,,https://dudhsagardairy.coop,Gujarat,False,False,"Dudhsagar Dairy is the Mehsana District Cooperative Milk Producers Union of Gujarat, part of the Amul federation pattern, known for butter and milk products."
+Warana Dairy,warana,cooperative,"Warana Group",https://www.warana.com,Maharashtra,False,False,"Warana Dairy is part of the Warana Group cooperative in Kolhapur, Maharashtra, producing milk, ghee, paneer and shrikhand for western India."
+Milma,milma,cooperative,,https://milma.com,Kerala,False,False,"Milma is the brand of Kerala Co-operative Milk Marketing Federation (KCMMF), the state cooperative serving Kerala with milk, curd, ghee and sreekand."
+Nandini (KMF),nandini,cooperative,,https://www.kmf.co.in,Karnataka,False,False,"Nandini is the brand of Karnataka Milk Federation (KMF), one of India's largest dairy cooperatives, dominant in Karnataka with a full milk and products range."
+Govardhan Dairy,gowardhan,listed,"Parag Milk Foods",https://www.gowardhan.com,Maharashtra,True,False,"Gowardhan is Parag Milk Foods' traditional dairy brand, India's largest maker of cow-based ghee and cheese under the Gowardhan and Go labels."
+Akshayakalpa,akshayakalpa,unlisted,,https://akshayakalpa.org,Karnataka,False,False,"Akshayakalpa Organic is a Bengaluru-based organic dairy startup running farmer-owned organic farms, delivering antibiotic-free milk direct to consumers in South Indian metros."

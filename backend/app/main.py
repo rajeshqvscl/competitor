@@ -1,11 +1,12 @@
 import os
 
+import python_multipart  # noqa: F401 — needed for file uploads
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api import (
     companies, categories, retailers, analysis, search, dashboard,
     sources, export, price_history, changes, analyses, ai_search,
-    alerts, data_quality, review_queue, distributors
+    alerts, data_quality, review_queue, distributors, ingest, import_csv, scan
 )
 
 app = FastAPI(
@@ -42,6 +43,9 @@ app.include_router(alerts.router, prefix="/api/alerts", tags=["alerts"])
 app.include_router(data_quality.router, prefix="/api/data-quality", tags=["data-quality"])
 app.include_router(review_queue.router, prefix="/api/review-queue", tags=["review-queue"])
 app.include_router(distributors.router, prefix="/api/distributors", tags=["distributors"])
+app.include_router(ingest.router, prefix="/api/ingest", tags=["ingest"])
+app.include_router(import_csv.router, prefix="/api/import", tags=["import"])
+app.include_router(scan.router, prefix="/api/scan", tags=["scan"])
 
 
 @app.get("/api/health")

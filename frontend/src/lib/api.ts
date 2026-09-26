@@ -176,6 +176,50 @@ export const approveReviewItem = (id: number, data?: any) =>
 export const rejectReviewItem = (id: number, data?: any) =>
   fetchAPI<any>(`/api/review-queue/${id}/reject`, { method: "PUT", body: JSON.stringify(data || {}) });
 
+// Ingest (Scraper)
+export const getIngestCompanies = () =>
+  fetchAPI<any[]>("/api/ingest/companies");
+
+export const startIngest = (data: { companies?: string[] | null; sources: string[]; dry_run: boolean }) =>
+  fetchAPI<any>("/api/ingest/run", { method: "POST", body: JSON.stringify(data) });
+
+export const getIngestStatus = () =>
+  fetchAPI<any>("/api/ingest/status");
+
+// CSV Import
+export const importPreview = (table: string, file: File) => {
+  const form = new FormData();
+  form.append("table", table);
+  form.append("file", file);
+  return fetch(`${API_BASE}/api/import/preview`, { method: "POST", body: form })
+    .then(async (res) => {
+      if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || `Import error: ${res.status}`);
+      return res.json();
+    });
+};
+
+export const importCommit = (table: string, file: File, dryRun: boolean) => {
+  const form = new FormData();
+  form.append("table", table);
+  form.append("file", file);
+  form.append("dry_run", String(dryRun));
+  return fetch(`${API_BASE}/api/import/commit`, { method: "POST", body: form })
+    .then(async (res) => {
+      if (!res.ok) throw new Error((await res.json().catch(() => ({}))).detail || `Import error: ${res.status}`);
+      return res.json();
+    });
+};
+
+// Website Scanner
+export const startScan = (url: string) =>
+  fetchAPI<any>("/api/scan/start", { method: "POST", body: JSON.stringify({ url }) });
+
+export const getScanStatus = () =>
+  fetchAPI<any>("/api/scan/status");
+
+export const saveScan = (data: { url: string; company_name?: string }) =>
+  fetchAPI<any>("/api/scan/save", { method: "POST", body: JSON.stringify(data) });
+
 // Distributors
 export const getDistributors = (params?: Record<string, string>) => {
   const qs = params ? "?" + new URLSearchParams(params).toString() : "";

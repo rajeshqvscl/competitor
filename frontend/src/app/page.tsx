@@ -1,7 +1,34 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import {
+  Building2, Milk, Package, Boxes, Store, MapPin,
+  SearchCheck, LayoutGrid, BarChart3, Truck, ArrowRight,
+} from "lucide-react";
 import { getDashboardStats, getCompanies } from "@/lib/api";
+import { PageHeader, StatCard, ProgressRow, SkeletonBlock } from "@/components/ui";
+
+const BAR_COLORS: Record<string, string> = {
+  cooperative: "bg-sky-500",
+  listed: "bg-emerald-500",
+  unlisted: "bg-amber-500",
+  global: "bg-violet-500",
+};
+
+const ACTION_ICONS: Record<string, React.ReactNode> = {
+  search: <SearchCheck className="w-5 h-5" />,
+  grid: <LayoutGrid className="w-5 h-5" />,
+  chart: <BarChart3 className="w-5 h-5" />,
+  truck: <Truck className="w-5 h-5" />,
+};
+
+const QUICK_ACTIONS = [
+  { href: "/analysis", label: "Competitor Analysis", desc: "Overlap & positioning", icon: "search" },
+  { href: "/companies", label: "Browse Companies", desc: "15+ players tracked", icon: "grid" },
+  { href: "/compare", label: "Compare Portfolios", desc: "Side-by-side SKUs", icon: "chart" },
+  { href: "/distributors", label: "Distribution Map", desc: "Network coverage", icon: "truck" },
+];
 
 export default function Dashboard() {
   const [stats, setStats] = useState<any>(null);
@@ -9,10 +36,7 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    Promise.all([
-      getDashboardStats(),
-      getCompanies({ limit: "10" }),
-    ])
+    Promise.all([getDashboardStats(), getCompanies({ limit: "6" })])
       .then(([s, c]) => {
         setStats(s);
         setTopCompanies(c);
@@ -21,170 +45,149 @@ export default function Dashboard() {
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <div className="text-gray-500">Loading...</div>;
-  if (!stats) return <div className="text-red-500">Failed to load stats</div>;
+  const ownership = (stats?.companies_by_ownership || {}) as Record<string, number>;
+  const ownershipMax = Math.max(1, ...Object.values(ownership).map(Number));
+  const regions = (stats?.companies_by_region || {}) as Record<string, number>;
+  const regionMax = Math.max(1, ...Object.values(regions).map(Number));
+  const skusByCat = (stats?.skus_by_category || {}) as Record<string, number>;
+  const skuMax = Math.max(1, ...Object.values(skusByCat).map(Number));
 
   return (
-    <div>
-      <h1 className="text-2xl font-bold mb-6">Dashboard</h1>
+    <div className="max-w-7xl animate-fade-in">
+      <PageHeader
+        title="Dashboard"
+        subtitle="Snapshot of the Indian dairy competitive landscape"
+      />
 
       {/* Summary cards */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
-        <StatCard label="Companies" value={stats.total_companies} color="blue" />
-        <StatCard label="Brands" value={stats.total_brands} color="green" />
-        <StatCard label="Products" value={stats.total_products} color="purple" />
-        <StatCard label="SKUs" value={stats.total_skus} color="yellow" />
-        <StatCard label="Retailers" value={stats.total_retailers} color="pink" />
-        <StatCard label="Regions" value={stats.total_regions} color="indigo" />
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 mb-8">
+        <StatCard loading={loading} label="Companies" value={stats?.total_companies} color="blue" icon={<Building2 className="w-4 h-4" />} />
+        <StatCard loading={loading} label="Brands" value={stats?.total_brands} color="green" icon={<Milk className="w-4 h-4" />} />
+        <StatCard loading={loading} label="Products" value={stats?.total_products} color="purple" icon={<Package className="w-4 h-4" />} />
+        <StatCard loading={loading} label="SKUs" value={stats?.total_skus} color="yellow" icon={<Boxes className="w-4 h-4" />} />
+        <StatCard loading={loading} label="Retailers" value={stats?.total_retailers} color="pink" icon={<Store className="w-4 h-4" />} />
+        <StatCard loading={loading} label="Regions" value={stats?.total_regions} color="indigo" icon={<MapPin className="w-4 h-4" />} />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
         {/* Ownership breakdown */}
-        <div className="card p-4">
-          <h2 className="font-semibold mb-4">Companies by Ownership</h2>
-          <div className="space-y-3">
-            {Object.entries(stats.companies_by_ownership || {}).map(([key, val]) => {
-              const count = val as number;
-              const pct = stats.total_companies > 0 ? Math.round((count / stats.total_companies) * 100) : 0;
-              return (
-                <div key={key}>
-                  <div className="flex justify-between text-sm mb-1">
-                    <span className="capitalize font-medium">{key}</span>
-                    <span className="text-gray-500">{count} ({pct}%)</span>
-                  </div>
-                  <div className="w-full bg-gray-100 rounded-full h-2">
-                    <div
-                      className={`h-2 rounded-full ${
-                        key === "cooperative" ? "bg-blue-500" :
-                        key === "listed" ? "bg-green-500" :
-                        key === "unlisted" ? "bg-yellow-500" : "bg-purple-500"
-                      }`}
-                      style={{ width: `${pct}%` }}
-                    />
-                  </div>
-                </div>
-              );
-            })}
+        <div className="card p-5">
+          <h2 className="font-semibold text-slate-800 mb-4">Companies by Ownership</h2>
+          <div className="space-y-4">
+            {loading
+              ? Array.from({ length: 4 }).map((_, i) => <SkeletonBlock key={i} className="h-9" />)
+              : Object.entries(ownership).map(([key, val]) => (
+                  <ProgressRow
+                    key={key}
+                    label={key.charAt(0).toUpperCase() + key.slice(1)}
+                    count={Number(val)}
+                    pct={(Number(val) / ownershipMax) * 100}
+                    barClass={BAR_COLORS[key] || "bg-slate-400"}
+                  />
+                ))}
+            {!loading && Object.keys(ownership).length === 0 && (
+              <div className="text-sm text-slate-400">No data</div>
+            )}
           </div>
         </div>
 
         {/* Region breakdown */}
-        <div className="card p-4">
-          <h2 className="font-semibold mb-4">Companies by Region</h2>
-          <div className="space-y-3">
-            {Object.entries(stats.companies_by_region || {})
-              .sort(([, a], [, b]) => (b as number) - (a as number))
-              .slice(0, 8)
-              .map(([key, val]) => {
-                const count = val as number;
-                const maxCount = Math.max(...Object.values(stats.companies_by_region).map(Number));
-                const pct = maxCount > 0 ? Math.round((count / maxCount) * 100) : 0;
-                return (
-                  <div key={key}>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="font-medium">{key}</span>
-                      <span className="text-gray-500">{count}</span>
-                    </div>
-                    <div className="w-full bg-gray-100 rounded-full h-2">
-                      <div className="h-2 rounded-full bg-blue-500" style={{ width: `${pct}%` }} />
-                    </div>
-                  </div>
-                );
-              })}
+        <div className="card p-5">
+          <h2 className="font-semibold text-slate-800 mb-4">Companies by Region</h2>
+          <div className="space-y-4">
+            {loading
+              ? Array.from({ length: 5 }).map((_, i) => <SkeletonBlock key={i} className="h-9" />)
+              : Object.entries(regions)
+                  .sort(([, a], [, b]) => (b as number) - (a as number))
+                  .slice(0, 8)
+                  .map(([key, val]) => (
+                    <ProgressRow
+                      key={key}
+                      label={key}
+                      count={Number(val)}
+                      pct={(Number(val) / regionMax) * 100}
+                      barClass="bg-brand-500"
+                    />
+                  ))}
           </div>
         </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
         {/* SKUs by category */}
-        <div className="card p-4">
-          <h2 className="font-semibold mb-4">SKUs by Category</h2>
-          <div className="space-y-3">
-            {Object.entries(stats.skus_by_category || {})
-              .sort(([, a], [, b]) => (b as number) - (a as number))
-              .map(([key, val]) => {
-                const count = val as number;
-                const maxCount = Math.max(...Object.values(stats.skus_by_category).map(Number));
-                const pct = maxCount > 0 ? Math.round((count / maxCount) * 100) : 0;
-                return (
-                  <div key={key}>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="font-medium">{key}</span>
-                      <span className="text-gray-500">{count}</span>
-                    </div>
-                    <div className="w-full bg-gray-100 rounded-full h-2">
-                      <div className="h-2 rounded-full bg-purple-500" style={{ width: `${pct}%` }} />
-                    </div>
-                  </div>
-                );
-              })}
+        <div className="card p-5">
+          <h2 className="font-semibold text-slate-800 mb-4">SKUs by Category</h2>
+          <div className="space-y-4">
+            {loading
+              ? Array.from({ length: 5 }).map((_, i) => <SkeletonBlock key={i} className="h-9" />)
+              : Object.entries(skusByCat)
+                  .sort(([, a], [, b]) => (b as number) - (a as number))
+                  .map(([key, val]) => (
+                    <ProgressRow
+                      key={key}
+                      label={key}
+                      count={Number(val)}
+                      pct={(Number(val) / skuMax) * 100}
+                      barClass="bg-violet-500"
+                    />
+                  ))}
           </div>
         </div>
 
         {/* Top companies */}
-        <div className="card p-4">
-          <h2 className="font-semibold mb-4">Companies</h2>
-          <div className="space-y-2">
-            {topCompanies.slice(0, 10).map((c) => (
-              <a
-                key={c.id}
-                href={`/companies/${c.id}`}
-                className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 transition-colors"
-              >
-                <div>
-                  <span className="font-medium text-sm">{c.name}</span>
-                  <span className="text-xs text-gray-400 ml-2">{c.headquarters_region?.name}</span>
-                </div>
-                <div className="flex gap-1">
-                  {c.ownership_type && (
-                    <span className="badge badge-blue text-xs">{c.ownership_type.name}</span>
-                  )}
-                </div>
-              </a>
-            ))}
+        <div className="card p-5">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="font-semibold text-slate-800">Tracked Companies</h2>
+            <Link href="/companies" className="text-sm text-brand-600 hover:text-brand-700 font-medium inline-flex items-center gap-1">
+              View all <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+          <div className="space-y-1">
+            {loading
+              ? Array.from({ length: 5 }).map((_, i) => <SkeletonBlock key={i} className="h-11" />)
+              : topCompanies.map((c) => (
+                  <Link
+                    key={c.id}
+                    href={`/companies/${c.id}`}
+                    className="flex items-center justify-between py-2.5 px-3 -mx-1 rounded-lg hover:bg-slate-50 transition-colors group"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-brand-50 text-brand-700 ring-1 ring-brand-100 flex items-center justify-center text-xs font-bold uppercase">
+                        {c.name.slice(0, 2)}
+                      </div>
+                      <div>
+                        <div className="text-sm font-medium text-slate-800 group-hover:text-brand-700 transition-colors">{c.name}</div>
+                        <div className="text-xs text-slate-400">{c.headquarters_region?.name || "—"}</div>
+                      </div>
+                    </div>
+                    {c.ownership_type && (
+                      <span className="badge badge-blue capitalize">{c.ownership_type.name}</span>
+                    )}
+                  </Link>
+                ))}
           </div>
         </div>
       </div>
 
       {/* Quick actions */}
-      <div className="card p-4">
-        <h2 className="font-semibold mb-4">Quick Actions</h2>
+      <div className="card p-5">
+        <h2 className="font-semibold text-slate-800 mb-4">Quick Actions</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <a href="/analysis" className="card p-3 text-center hover:shadow-md transition-shadow">
-            <div className="text-2xl mb-1">&#128269;</div>
-            <div className="text-sm font-medium">Competitor Analysis</div>
-          </a>
-          <a href="/companies" className="card p-3 text-center hover:shadow-md transition-shadow">
-            <div className="text-2xl mb-1">&#127970;</div>
-            <div className="text-sm font-medium">Browse Companies</div>
-          </a>
-          <a href="/categories" className="card p-3 text-center hover:shadow-md transition-shadow">
-            <div className="text-2xl mb-1">&#128193;</div>
-            <div className="text-sm font-medium">Category Explorer</div>
-          </a>
-          <a href="/search" className="card p-3 text-center hover:shadow-md transition-shadow">
-            <div className="text-2xl mb-1">&#128270;</div>
-            <div className="text-sm font-medium">Search</div>
-          </a>
+          {QUICK_ACTIONS.map(({ href, label, desc, icon }) => (
+            <Link
+              key={href}
+              href={href}
+              className="card card-hover p-4 text-left"
+            >
+              <div className="w-9 h-9 rounded-lg bg-brand-50 text-brand-600 ring-1 ring-brand-100 flex items-center justify-center mb-3">
+                {ACTION_ICONS[icon]}
+              </div>
+              <div className="text-sm font-semibold text-slate-800">{label}</div>
+              <div className="text-xs text-slate-400 mt-0.5">{desc}</div>
+            </Link>
+          ))}
         </div>
       </div>
-    </div>
-  );
-}
-
-function StatCard({ label, value, color }: { label: string; value: number; color: string }) {
-  const colorMap: Record<string, string> = {
-    blue: "text-blue-600",
-    green: "text-green-600",
-    purple: "text-purple-600",
-    yellow: "text-yellow-600",
-    pink: "text-pink-600",
-    indigo: "text-indigo-600",
-  };
-  return (
-    <div className="card p-4 text-center">
-      <div className={`text-2xl font-bold ${colorMap[color] || "text-blue-600"}`}>{value}</div>
-      <div className="text-sm text-gray-500 mt-1">{label}</div>
     </div>
   );
 }

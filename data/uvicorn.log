@@ -1,0 +1,52 @@
+INFO:     Started server process [14560]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:9001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:61851 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61852 - "GET /api/scan/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57587 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57588 - "GET /api/scan/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57589 - "GET /api/ingest/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57590 - "GET /api/dashboard/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49180 - "GET /api/dashboard/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49181 - "GET /api/companies?limit=6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61406 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62167 - "OPTIONS /api/dashboard/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60617 - "GET /api/dashboard/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61961 - "GET /api/companies/1/competitors HTTP/1.1" 200 OK
+E:\competitor\backend\app\api\ai_search.py:114: SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
+  company_q = company_q.filter(Company.id.in_(cr_subq))
+INFO:     127.0.0.1:56624 - "POST /api/ai-search HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58228 - "OPTIONS /api/ingest/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61843 - "OPTIONS /api/ingest/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61843 - "GET /api/ingest/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58228 - "GET /api/ingest/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50082 - "GET /api/scan/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59517 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62839 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52893 - "OPTIONS /api/import/preview HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52893 - "OPTIONS /api/import/commit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52893 - "OPTIONS /api/scan/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52893 - "OPTIONS /api/ingest/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63641 - "OPTIONS /api/ingest/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63641 - "GET /api/ingest/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50140 - "GET /api/ingest/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54321 - "OPTIONS /api/review-queue?status=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55505 - "OPTIONS /api/review-queue?status=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55505 - "GET /api/review-queue?status=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54321 - "GET /api/review-queue?status=pending HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54321 - "OPTIONS /api/data-quality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55505 - "OPTIONS /api/data-quality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62853 - "GET /api/data-quality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59685 - "GET /api/data-quality HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59685 - "OPTIONS /api/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62853 - "OPTIONS /api/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56478 - "OPTIONS /api/categories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56478 - "GET /api/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59685 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62853 - "GET /api/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62853 - "GET /api/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56478 - "GET /api/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59685 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52255 - "GET /api/ingest/companies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57315 - "GET /api/ingest/companies HTTP/1.1" 200 OK

@@ -55,6 +55,28 @@ def list_distributors(
     ]
 
 
+@router.get("/company/{company_id}")
+def get_company_distributors(company_id: int, db: Session = Depends(get_db)):
+    rels = db.query(CompanyDistributor).options(
+        joinedload(CompanyDistributor.distributor),
+        joinedload(CompanyDistributor.brand),
+    ).filter(CompanyDistributor.company_id == company_id).all()
+
+    return [
+        {
+            "distributor_id": rel.distributor_id,
+            "distributor_name": rel.distributor.name if rel.distributor else "Unknown",
+            "distributor_type": rel.distributor.type if rel.distributor else None,
+            "state": rel.distributor.state if rel.distributor else None,
+            "city": rel.distributor.city if rel.distributor else None,
+            "territory": rel.distributor.territory if rel.distributor else None,
+            "brand_name": rel.brand.name if rel.brand else None,
+            "is_primary": rel.is_primary,
+        }
+        for rel in rels
+    ]
+
+
 @router.get("/{distributor_id}")
 def get_distributor(distributor_id: int, db: Session = Depends(get_db)):
     d = db.query(Distributor).filter(Distributor.id == distributor_id).first()
@@ -139,25 +161,3 @@ def delete_distributor(distributor_id: int, db: Session = Depends(get_db)):
     db.delete(d)
     db.commit()
     return {"status": "deleted"}
-
-
-@router.get("/company/{company_id}")
-def get_company_distributors(company_id: int, db: Session = Depends(get_db)):
-    rels = db.query(CompanyDistributor).options(
-        joinedload(CompanyDistributor.distributor),
-        joinedload(CompanyDistributor.brand),
-    ).filter(CompanyDistributor.company_id == company_id).all()
-
-    return [
-        {
-            "distributor_id": rel.distributor_id,
-            "distributor_name": rel.distributor.name if rel.distributor else "Unknown",
-            "distributor_type": rel.distributor.type if rel.distributor else None,
-            "state": rel.distributor.state if rel.distributor else None,
-            "city": rel.distributor.city if rel.distributor else None,
-            "territory": rel.distributor.territory if rel.distributor else None,
-            "brand_name": rel.brand.name if rel.brand else None,
-            "is_primary": rel.is_primary,
-        }
-        for rel in rels
-    ]
